@@ -78,7 +78,7 @@
 
 
 {% block content %}
-<div class="chat-container">
+<div class="chat-container" id="scrollContainer">
   <div class="card flex-grow-1">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -190,6 +190,7 @@
     </div>
   </div>`;
   messagesList.appendChild(messageItem);
+  window.scrollTo(0, document.body.scrollHeight);
   })
 })
 
