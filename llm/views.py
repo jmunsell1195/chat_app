@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 from llama_cpp import Llama
 from django.http import JsonResponse
 
-LLAMA_PATH = '/home/jeremy/llm_chatbot/llm/llama-2-13b.Q4_K_S.gguf'
+LLAMA_PATH = '/home/jeremy/Desktop/llama-2-13b.Q4_K_S.gguf'
 
 model = Llama(model_path=LLAMA_PATH)
 
